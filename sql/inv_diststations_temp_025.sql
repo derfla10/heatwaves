@@ -200,12 +200,7 @@ host powershell -ExecutionPolicy RemoteSigned -File C:\DEV\generate.temperature.
 start e:\dea\heatprd\dailyheatwaveturbo &ayear &parsemonth&parseday
 start e:\dea\heatprd\sync_heatwaves
 start e:\dea\heatprd\hazardlocation
-
-start e:\dea\heatprd\hazardlocation
-
 start e:\dea\heatprd\refreshlastdays
-
-connect sirocco/aquila_18_potter16@dea/dea.ies.jrc.it
 start e:\dea\heatprd\update_dbio_endday &ayear &parsemonth &parseday
 
 host powershell -ExecutionPolicy RemoteSigned -File C:\DEV\updateEdoLayerDatesJs.ps1 102 5 &ayear &parsemonth &parseday
